@@ -1,0 +1,1 @@
+/rust-lesson/hello_world/target/debug/hello_world: /rust-lesson/hello_world/src/main.rs /rust-lesson/hello_world/src/vars/sub_a.rs /rust-lesson/hello_world/src/vars/sub_b.rs /rust-lesson/hello_world/src/vars.rs
