@@ -90,7 +90,7 @@ pub fn run() {
     let ref3 = &mut s12;
     *ref3 = String::from("hello_updated");
     println!("{}", s12);
-    
+
     println!("\n*** Finished ***\n");
 }
 
