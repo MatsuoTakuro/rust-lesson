@@ -1,8 +1,7 @@
-use std::{panic::Location, thread::LocalKey};
-
 trait Fruits {
     fn price(&self) -> u32;
 }
+
 struct Apple;
 impl Fruits for Apple {
     fn price(&self) -> u32 {
@@ -51,7 +50,6 @@ impl Summary for Tweet {
     }
 }
 
-
 pub fn run() {
     let apple = Apple {};
     let banana = Banana {};
@@ -78,13 +76,13 @@ pub fn run() {
     notify_another(&article);
     // notify_another(&tweet);
 }
+
 fn get_price<T: Fruits>(fruits: T) {
     println!("price is : {}", fruits.price());
 }
 fn notify(item: &impl Summary) {
     println!("Breaking news! {}", item.summarize());
 }
-
 fn notify_another(item: &(impl Summary + Message)) {
     println!("Breaking news! {}", item.summarize());
     println!("Message! {}", item.message());
